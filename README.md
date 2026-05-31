@@ -21,7 +21,7 @@ During group trips with friends, tracking expenses manually became confusing and
 ## Tech Stack
 
 - Java
-- PostgreSQL
+- MySQL
 - JDBC / Spring Boot
 - Git
 - GitHub
