@@ -52,19 +52,19 @@ src/
 ```text
 Trip Dinner: ₹900
 
-Paid By: Shashank
+Paid By: Shasank
 
 Participants:
-- Shashank
-- Rahul
-- Priya
+- Shasank
+- Akshaj
+- Chetan
 ```
 
 ### Output
 
 ```text
-Rahul owes Shashank ₹300
-Priya owes Shashank ₹300
+Chetan owes Shasank ₹2000
+Akshaj owes Shasank ₹3000
 ```
 
 ## Challenges Solved
@@ -97,4 +97,4 @@ Run the project using your preferred IDE.
 
 ## Author
 
-Shashank
+Shasank
