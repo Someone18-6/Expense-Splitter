@@ -50,7 +50,7 @@ src/
 ### Expense
 
 ```text
-Trip Dinner: ₹900
+Trip Dinner: ₹8000
 
 Paid By: Shasank
 
