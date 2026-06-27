@@ -97,4 +97,4 @@ Run the project using your preferred IDE.
 
 ## Author
 
-Shasank
+Karanam Shasank
