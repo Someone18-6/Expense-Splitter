@@ -13,7 +13,9 @@ public class Expense {
 
     private double amount;
 
-    private String paidBy;
+    @ManyToOne
+    @JoinColumn(name="user_id")
+    private User user;
 
     public int getExpenseId() {
         return expenseId;
@@ -39,11 +41,11 @@ public class Expense {
         this.amount = amount;
     }
 
-    public String getPaidBy() {
-        return paidBy;
+    public User getUser() {
+        return user;
     }
 
-    public void setPaidBy(String paidBy) {
-        this.paidBy = paidBy;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

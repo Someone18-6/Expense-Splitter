@@ -1,9 +1,8 @@
 package com.Shasank.SplitSmart.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 public class User {
@@ -13,7 +12,12 @@ public class User {
     private int userId;
 
     private String name;
+
     private String email;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private List<Expense> expenses;
 
     public int getUserId() {
         return userId;
@@ -37,5 +41,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Expense> getExpenses() {
+        return expenses;
+    }
+
+    public void setExpenses(List<Expense> expenses) {
+        this.expenses = expenses;
     }
 }
